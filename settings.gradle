@@ -1,2 +1,3 @@
 rootProject.name = 'object-oriented-design-patterns'
+include 'singleton'
 
