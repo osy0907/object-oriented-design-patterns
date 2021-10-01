@@ -2,18 +2,29 @@ plugins {
     id 'java'
 }
 
-group 'object-oriented-design-patterns'
-version '1.0-SNAPSHOT'
+subprojects {
+    group 'object-oriented-design-patterns'
+    version '1.0-SNAPSHOT'
 
-repositories {
-    mavenCentral()
-}
+    apply plugin: 'java'
 
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-}
+    sourceCompatibility = JavaVersion.VERSION_16
+    targetCompatibility = JavaVersion.VERSION_16
 
-test {
-    useJUnitPlatform()
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+        // abstract logging framework
+        implementation 'org.slf4j:slf4j-api:1.7.32'
+        // SLF4j binding with Logback
+        implementation 'ch.qos.logback:logback-classic:1.2.6'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
 }
