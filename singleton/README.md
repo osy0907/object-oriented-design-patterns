@@ -18,7 +18,7 @@
 
 ## 3. Class diagram
 
-![singleton.urm](main/etc/singleton.urm.png)
+![singleton](src/etc/singleton.urm.png)
 
 ## 4. 객체 협력 (collaborations)
 
