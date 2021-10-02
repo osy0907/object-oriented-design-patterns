@@ -2,4 +2,5 @@ rootProject.name = 'object-oriented-design-patterns'
 include 'singleton'
 include 'prototype'
 include 'abstract-factory'
+include 'builder'
 

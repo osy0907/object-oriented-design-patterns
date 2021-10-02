@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'object-oriented-design-patterns'
+version 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+test {
+    useJUnitPlatform()
+}
