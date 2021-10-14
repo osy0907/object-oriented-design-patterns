@@ -3,4 +3,5 @@ include 'singleton'
 include 'prototype'
 include 'abstract-factory'
 include 'builder'
+include 'template-method'
 
